@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subir y descargar archivos de Dropbox</title>
+</head>
+<body>
+  <h1>Subir archivo a Dropbox</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Subir">
+  </form>
+
+  <h1>Descargar archivo de Dropbox</h1>
+  <form action="/download" method="get">
+    <input type="text" name="filename" placeholder="Nombre del archivo">
+    <input type="submit" value="Descargar">
+  </form>
+</body>
+</html>
